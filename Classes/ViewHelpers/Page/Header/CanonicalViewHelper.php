@@ -72,7 +72,6 @@ class CanonicalViewHelper extends AbstractTagBasedViewHelper
         $uriBuilder = $this->renderingContext->getControllerContext()->getUriBuilder();
         $uri = $uriBuilder->reset()
             ->setTargetPageUid($pageUid)
-            ->setUseCacheHash(true)
             ->setCreateAbsoluteUri(true)
             ->setAddQueryString(true)
             ->setAddQueryStringMethod($queryStringMethod)
